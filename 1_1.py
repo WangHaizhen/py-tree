@@ -1,10 +1,17 @@
-#coding=utf8
-def j(x):
-    return True if 0<= int(x) <=255 else False;
-while True:
-    s = input('Please enter string:')
-    x = s.split()
-    if j(x[0]) and j(x[1]) and j(x[2]) and j(x[3]):
-        print('.'.join(x))
-    else:
-        print('[Error]: cannot compose IP address')
+#coding = utf8
+i = 0
+while( i < 4 ):
+	flag = 0 
+	s=input('Please enter string:')
+	x = s.split(' ')  
+	for j in range(4):
+		if int(x[j]) < 0 or int(x[j]) > 255:
+			print('[Error]: cannot compose IP address')
+			flag = 1
+			break
+			j = j + 1
+	y = '.'.join(x)  
+	#print(x)
+	if flag == 0:
+		print(y)
+	i = i + 1
