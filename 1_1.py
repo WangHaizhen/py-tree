@@ -3,8 +3,8 @@ while True:
 	flag = 0 
 	s=input('Please enter string:')
 	x = s.split()  
-	for j in range(4):
-		if int(x[j]) < 0 or int(x[j]) > 255:
+	for xx in x:
+		if int(xx) < 0 or int(xx) > 255:
 			print('[Error]: cannot compose IP address')
 			flag = 1
 			break
