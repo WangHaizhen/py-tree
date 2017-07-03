@@ -1,4 +1,4 @@
-﻿# py-tree
+# py-tree
 一个 python 的练习树。
 
 这里是我练习 python 的地方，提供有各种用来练手的 python 小项目。
@@ -12,12 +12,12 @@ git clone https://github.com/WangHaizhen/py-tree.git
 ```
 2. 编写对应题目代码，命名规则为 **项目编号.py**  
 栗子：  
-第二题代码文件 ---> 1_1.py
+第二题代码文件 ---> w_1_1.py
 
 3. 编写完成，push 到 github
 ```
 git add .
-git commit -m 'update 1_1.py'
+git commit -m 'update w_1_1.py'
 git push origin master
 ```
 
@@ -76,7 +76,7 @@ URL 地址又称 **Uniform Resoure Locator，即 统一资源定位器** ，是�
 
 我们把这个问题简化，现在有一个网络资源 **love.png** ，给你找到它的 **协议、组成主机IP的四个数字、端口号**，你需要把他们拼接成 URL 格式，并输出。
 
-**特殊要求**：拼接 IP 地址要调用 1_1 中写的模块。
+**特殊要求**：拼接 IP 地址要调用 w_1_1 中写的模块。
 
 #### 输入：
 ```
