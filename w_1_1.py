@@ -16,10 +16,8 @@ def IP(s):
 if __name__=='__main__':
 	while True:
 		s = input('Please enter string:')
-		re = IP(s)
-		if re == True:
-			x = s.split()
-			print('.'.join(x))
+		if IP(s):
+			print('.'.join(s.split()))
 		else:
 			print('[Error]: cannot compose IP address')
 
