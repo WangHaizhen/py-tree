@@ -2,9 +2,10 @@
 
 __author__ = 'WangHaizhen'
 
-from detectionIP import *
+from w_1_1 import *
 
 def my_bin(num):
+    num = int(num)
     L = []
     if num == 0:
         return('0')
@@ -17,15 +18,11 @@ def my_bin(num):
 
 while True:
     s=input('Please enter string:')
-    re = IP(s)
-    if re == True:
-        x=s.split('.')
-        L = []
-        for xx in x:
-            L.append(my_bin(int(xx)))
+    if IP(' '.join(s.split('.'))):
+        L = map(my_bin, s.split('.'))
         print('.'.join(L))
     else:
-        print('[Error]: cannot compose IP address')
+        print('[Error]: Not an IP address.')
     
 
 
