@@ -1,5 +1,7 @@
 #coding=utf8
 
+__author__ = 'WangHai zhen'
+
 while True:
 	A = input('Please input the first list:')
 	B = input('Please input the first list:')

@@ -145,10 +145,10 @@ ftp://45.67.89.01:21/love.png
 
 #### 输入：
 ```
-【电影天堂 www.dytt8.net】海上钢琴师.mp4
-【电影天堂 www.dytt8.net】.肖申克的救赎.mp4
-【飘花电影】 -你的名字 新海诚.avi
-千与千寻 宫崎骏【飘花电影 www.piaohua.com】.rmvb
+[电影天堂 www.dytt8.net]海上钢琴师.mp4
+[电影天堂 www.dytt8.net].肖申克的救赎.mp4
+[飘花电影] -你的名字 新海诚.avi
+千与千寻 宫崎骏[飘花电影 www.piaohua.com].rmvb
 ```
 #### 输出：
 ```
