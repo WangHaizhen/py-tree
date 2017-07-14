@@ -117,6 +117,13 @@ ftp://45.67.89.01:21/love.png
 11111011.10100101.10010001.10100111
 ```
 
+### 1_4.解密！
+这里有一个神秘字符串，里面藏着两句话，期待你将它解密！~ 加油~~
+```
+XDRjXDY5XDY2XDY1XDIwXDY5XDczXDIwXDczXDY4XDZmXDcyXDc0XDJjXDIwXDQ5XDIwXDc1XDczXDY1XDIwXDcwXDc5XDc0XDY4XDZmXDZlXDJlXGFcNGNcNjlcNjZcNjVcMjBcNjlcNzNcMjBcNjJcNjVcNjFcNzVcNzRcNjlcNjZcNzVcNmNcMmNcMjBcNDlcMjBcNmNcNmZcNzZcNjVcMjBcNjJcNjFcNmZcNjJcNjFcNmZcMmU=
+```
+**提示**：base64、ASCII
+
 ### 2.列表解析的双重循环
 #### 功能描述：
 如何将B列表中的每一个元素与A列表中的元素相加，生成一个新列表？
