@@ -13,10 +13,15 @@ while True:
 	for i in List1:
 		print(i,end=' ')
 	print()
-	for ii in random.sample(range(1, 9), int(x)):
+	List2=[]
+	j=0
+	while j < int(x):
+		List2.append(random.randint(1,9))
+		j = j + 1
+	for ii in List2:
 		print(ii,end =' ')
-		for j in List1:
-			if int(ii) < int(j):
+		for k in List1:
+			if ii < int(k):
 				print('o',end=' ')
 				m = m+1
 			else:
