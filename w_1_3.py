@@ -20,6 +20,7 @@ while True:
     s=input('Please enter string:')
     if IP(' '.join(s.split('.'))):
         L = map(my_bin, s.split('.'))
+        print(type(L))
         print('.'.join(L))
     else:
         print('[Error]: Not an IP address.')
