@@ -6,30 +6,22 @@ import os
 import re
 
 def clear(fp):
-    if re.search('\[',fp):
-        if fp.find(']') != -1:
-            fp = fp.replace("[","l").replace("]","l")
-            pattern = re.compile(r'(l)(.+)(l)')
-            return pattern.sub(r'',fp)
-        else:
-            return fp
-    elif re.search(u'【',fp):
-        if fp.find(u'】') != -1:
-            fp = fp.replace(u"【","l").replace(u"】","l")
-            pattern = re.compile(r'(l)(.+)(l)')
-            return pattern.sub(r'',fp)
-        else:
-            return fp
+    if re.search('\[',fp) and fp.find(']') != -1:
+        return re.sub('\[.*?\]', '', fp)  #re.sub()将fp中匹配'\[.*?\]'的字符串替换为''
+    elif re.search(u'【',fp) and fp.find(u'】') != -1:
+        return re.sub('\【.*?\】', '', fp)#re.sub()将fp中匹配'\【.*?\】'的字符串替换为''
     elif re.search('\-',fp):
         return fp.replace(u"-","")
     else:
         return fp
+     
 
-
-path = 'E:\\Workspace\\markdown.md\\py-tree\\x_x\\example_input'
+path = r'E:\Workspace\markdown.md\py-tree\x_x\example_input'
 for i in os.listdir(os.getcwd()):
     if i == "x_x.py":
         continue
+    #print(clear(i))
+ 
     t = (clear(i)).split('.')
     while '' in t:
         t.remove('')
