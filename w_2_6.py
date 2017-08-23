@@ -2,12 +2,11 @@
 
 __author__ = 'WangHai zhen'
 
+
 while True:
-	print('Please input  a list:')
+	print('please input a list:')
 	s = input()
-	List = list(s.split())
-	list1 = []
-	for i in List:
-		if i not in list1:
-			list1.append(i)
-	print(list1)
+	t = s.split(' ')
+	List = list(set(t))
+	List.sort(key = t.index )
+	print(List)
